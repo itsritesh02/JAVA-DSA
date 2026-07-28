@@ -12,10 +12,18 @@ public class reverseArray {
     int n = arr.length;
     int[] ans = new int[n];
     int j = 0;
-    for (int i = n-1; i >= 0; i--) {
-      ans[j] = arr[i];
-      j++;
-    }
+
+    //Traverse Array in Reverse Direction
+
+    // for (int i = n-1; i >= 0; i--) {
+    //   ans[j] = arr[i];
+    //   j++;
+    // }
+int i=n-1;
+while(i>=0){
+  ans[j++] = arr[i--];
+}
+
     return ans;
 
   }
