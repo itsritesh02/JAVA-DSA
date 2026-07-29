@@ -36,6 +36,9 @@ public class PairSum {
 
     System.out.println("Enter target");
     int Target = sc.nextInt();
+
+
+    
 int total=sum(arr, Target);
     System.out.println("total pairs are :"+total);
   }
