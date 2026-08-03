@@ -46,6 +46,23 @@ static int countOccurences(int[]arr, int x){
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
 /*
+      Approach: Brute Force (Linear Search)
+     
+      Algorithm:
+      1. Traverse the entire array.
+      2. Compare each element with x.
+      3. If element == x, increment count.
+      4. Return count.
+     
+      Time Complexity: O(n)
+      -> We traverse the array only once.
+     
+      Space Complexity: O(1)
+      -> Only a few extra variables (count, i) are used.
+     /
+
+
+/*
 import java.util.Scanner;
 // Hindi: Scanner class import ki hai taki user se input le saken.
 // English: Imported the Scanner class to take input from the user.
