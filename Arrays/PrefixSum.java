@@ -6,26 +6,24 @@ public class PrefixSum {
     }
   }
 
-  static int[] Sum(int[] arr) {
-    int n = arr.length;
-    int ans[] = new int[n];
-    for (int i = 0; i < n; i++) {
-      int sum = 0;
-      for (int j = 0; j <= i; j++) {
-        sum += arr[j];
 
-        ans[i] = sum;
-      }
+  static int [] preSum(int arr[]){
+    for (int i=1;i<arr.length;i++){
+      arr[i]+=arr[i-1];
+
     }
-    return ans;
+    return arr;
   }
 
+  
+  
   public static void main(String[] args) {
     int arr[] = { 1, 2, 3, 4, 5 };
     printArr(arr);
-    int res[] = Sum(arr);
+    int res[] = preSum(arr);
     System.out.println(" ");
     printArr(res);
   }
 }
+
 
